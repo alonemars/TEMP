@@ -3,10 +3,10 @@
 #include <ESP8266WiFi.h>
 #include <WiFiClient.h>
 #include <ArduinoJson.h>
-
 //#include <WiFiUdp.h>
 //#include <ESP8266WebServer.h>
 //#include <ESP8266mDNS.h>
+
 
 #define TEMPERATURE_PRECISION 12
 OneWire ds(5);
@@ -14,11 +14,11 @@ DallasTemperature sensors(&ds);
 DeviceAddress tempDeviceAddress,temp_adress[4];
 int numberOfDevices;
 float temp[]={};
-const char* ssid     = "SOHO_GBA";
-const char* password = "WiFi.hostname._163"; 
+const char* ssid     = "xxxxxx";
+const char* password = "xxxxxx"; 
 const char* host = "api.heclouds.com";
-const char* APIKEY = "f8r7Yv3b7D=S7FICYnTZD1AXAwU=";    // API KEY
-int32_t deviceId = 4599684;                             // Device ID
+const char* APIKEY = "xxxxxx";    // API KEY
+int32_t deviceId = xxxxxx;                             // Device ID
 const char* DS_Temp1 = "temperature_1";                 // 数据流 - temperature_1
 const char* DS_Temp2 = "temperature_2";                 // 数据流 - temperature_2
 const size_t MAX_CONTENT_SIZE = 1024;                  //
